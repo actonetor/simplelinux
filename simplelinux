@@ -1,0 +1,104 @@
+#!/usr/bin/python3
+import os
+def al():
+    def intr(): 
+        print("       .__               .__         .__  .__                       ")
+        print("  _____|__| _____ ______ |  |   ____ |  | |__| ____  __ _____  ___  ")
+        print(" /  ___/  |/     \\____  \|  | _/ __ \|  | |  |/    \|  |  \  \/  / ")
+        print(" \___ \|  |  Y Y  \  |_> >  |_\  ___/|  |_|  |   |  \  |  />    <   ")
+        print("/____  >__|__|_|  /   __/|____/\___  >____/__|___|  /____//__/\_ \  ")
+        print("     \/         \/|__|             \/             \/            \/  ")
+    intr()
+    print("\n1. ls \n2. cd \n3. pwd \n4. mkdir \n5. rm \n6. cp \n7. mv \n8. touch \n9. cat \n10. tail\n")
+    jd = input("Entrer une options valide ( 1>10 ) : ")
+    if jd == str("1"):
+        os.system("clear")
+        intr()
+        print("\nls : lister tous les fichier d'un emplacement\nls -l : lister les formater\nls -la : lister les fichier cacher est ce formater\n")
+        men = input("Vouler vous retourner au menu ? ( oui ou non ) : ")
+        if men == str("non"):         
+            quit()
+        if men == str("oui") :
+            al()
+    if jd == str("2"):
+        os.system("clear")
+        intr()
+        print("\ncd dir : Entrer dans le fichier dir ( dir = nom du fichier )\ncd : retourner au fichier de base\n")
+        men = input("Vouler vous retourner au menu ? ( oui ou non ) : ")
+        if men == str("non") :
+            quit()
+        if men == str("oui") :
+            al()
+    if jd == str("3"):
+        os.system("clear")
+        intr()
+        print("\npwd : afficher ou vous etes\n")
+        men = input("Vouler vous retourner au menu ? ( oui ou non ) : ")
+        if men == str("non") :
+            quit()
+        if men == str("oui") :
+            al()
+    if jd == str("4"):
+        os.system("clear")
+        intr()
+        print("\nmkdir dir : creer un fichier ( nom = dir )\n")
+        men = input("Vouler vous retourner au menu ? ( oui ou non ) : ")
+        if men == str("non") :
+            quit()
+        if men == str("oui") :
+            al()
+    if jd == str("5"):
+        os.system("clear")
+        intr()
+        print("\nrm file : supprimer ( file )\nrm -f dir : forcer la réinitialisation du fichier\nrm -r dir : supprimer le répèretoire dir\nrm -rf dir : réinitialiser le répèrtoire dir\nrm -rf : supprimer tous les fichier du pc\n")
+        men = input("Vouler vous retourner au menu ? ( oui ou non ) : ")
+        if men == str("non") :
+            quit()
+        if men == str("oui") :
+            al()
+    if jd == str("6"):
+        os.system("clear")
+        intr()
+        print("\ncp file1 file2 : copier file1 a file2\n")
+        men = input("Vouler vous retourner au menu ? ( oui ou non ) : ")
+        if men == str("non") :
+            quit()
+        if men == str("oui") :
+            al()
+    if jd == str("7"):
+        os.system("clear")
+        intr()
+        print("\nmv file1 file2 : renomer file1 a file2\nmv file1 dir/file2 : bouger les fichier de file1 a file2\n")
+        men = input("Vouler vous retourner au menu ? ( oui ou non ) : ")
+        if men == str("non") :
+            quit()
+        if men == str("oui") :
+            al()
+    if jd == str("8"):
+        os.system("clear")
+        intr()
+        print("\ntouch file : creer ou mettre a jour file\n")
+        men = input("Vouler vous retourner au menu ? ( oui ou non ) : ")
+        if men == str("non") :
+            quit()
+        if men == str("oui") :
+            al()
+    if jd == str("9"):
+        os.system("clear")
+        intr()
+        print("\ncat file : output contenue de file\ncat > file : ecrire input standar\n")
+        men = input("Vouler vous retourner au menu ? ( oui ou non ) : ")
+        if men == str("non") :
+            quit()
+        if men == str("oui") :
+            al()
+    if jd == str("10"):
+        os.system("clear")
+        intr()
+        print("\ntail -f file : output le contenue du fichier file\n")
+        men = input("Vouler vous retourner au menu ? ( oui ou non ) : ")
+        if men == str("non") :
+            quit()
+        if men == str("oui") :
+            al()
+al()
